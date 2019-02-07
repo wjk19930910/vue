@@ -12,6 +12,9 @@ import Rights from '@/components/page/rights/rights.vue'
 import Roles from '@/components/page/roles/roles.vue'
 import Goods from '@/components/page/goods/goods.vue'
 import GoodsAdd from '@/components/page/goods/add.vue'
+import Categories from '@/components/page/categories/categories.vue'
+import Orders from '@/components/page/orders/orders.vue'
+
 
 
 Vue.use(Router)
@@ -49,6 +52,14 @@ var router = new Router({
         {
           path: '/goods/add',
           component: GoodsAdd
+        },
+        {
+          path: '/categories',
+          component: Categories
+        },
+        {
+          path: '/orders',
+          component: Orders
         }
       ]
     }
