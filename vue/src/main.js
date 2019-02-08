@@ -15,6 +15,9 @@ import ElTreeGrid from 'element-tree-grid'
 import 'quill/dist/quill.core.css'
 import 'quill/dist/quill.snow.css'
 import 'quill/dist/quill.bubble.css'
+import ECharts from 'vue-echarts'
+import 'echarts/lib/chart/bar'
+import 'echarts/lib/component/tooltip'
 
 
 
@@ -26,6 +29,7 @@ Vue.use(myaxios)
 Vue.use(VueQuillEditor)
 Vue.component(MyBread.name, MyBread)
 Vue.component(ElTreeGrid.name, ElTreeGrid)
+Vue.component('v-chart', ECharts)
 Vue.filter('dateformat', function (value) {
   return moment(value).format('YYYY-MM-DD hh:mm:ss')
 })

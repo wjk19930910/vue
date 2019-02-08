@@ -14,6 +14,8 @@ import Goods from '@/components/page/goods/goods.vue'
 import GoodsAdd from '@/components/page/goods/add.vue'
 import Categories from '@/components/page/categories/categories.vue'
 import Orders from '@/components/page/orders/orders.vue'
+import Reports from '@/components/page/reports/reports.vue'
+
 
 
 
@@ -60,6 +62,10 @@ var router = new Router({
         {
           path: '/orders',
           component: Orders
+        },
+        {
+          path: '/reports',
+          component: Reports
         }
       ]
     }
